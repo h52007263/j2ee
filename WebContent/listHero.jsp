@@ -20,7 +20,7 @@ $(function(){
 	<table align="center" border="1" cellspacing="0" style="width:500px;margin:44px auto"
 	class="table table-striped table-bordered table-hover table-condensed"> 
 		<tr align="center">
-			<td>id</td>
+			<td>序号</td>
 			<td>name</td>
 			<td>hp</td>
 			<td>damage</td>
@@ -29,7 +29,7 @@ $(function(){
 		</tr>
 	<c:forEach items="${heros }" var="hero" varStatus="st">
 		<tr align="center">
-			<td>${st.count }</td>
+			<td>${start+st.count }</td>
 			<td>${hero.name }</td>
 			<td>${hero.hp }</td>
 			<td>${hero.damage }</td>

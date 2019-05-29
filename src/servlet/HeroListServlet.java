@@ -42,6 +42,7 @@ public class HeroListServlet extends HttpServlet{
         request.setAttribute("next", next);
         request.setAttribute("pre", pre);
         request.setAttribute("last", last);
+        request.setAttribute("start", start);
         request.getRequestDispatcher("listHero.jsp").forward(request, response);
 	}
 }
