@@ -39,6 +39,7 @@ $(function(){
 	</c:forEach>
 	<tr>
 		<td colspan="6" align="center">
+			<span>共${total }条</span>
 			<a href="?start=0">[首 页]</a>
 			<a href="?start=${pre }">[上一页]</a>
 			<a href="?start=${next }">[下一页]</a>

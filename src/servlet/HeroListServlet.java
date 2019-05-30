@@ -39,6 +39,7 @@ public class HeroListServlet extends HttpServlet{
 	    
 		List<Hero> heros = new HeroDAO().list(start,count);
         request.setAttribute("heros", heros);	
+        request.setAttribute("total", total);
         request.setAttribute("next", next);
         request.setAttribute("pre", pre);
         request.setAttribute("last", last);
